@@ -87,14 +87,14 @@ function modeMulti() {
     let joueurs = [];
     let joueurActuel;
     while true{
-		let nombreJoueurs = +prompt("combien de joueurs ?"); // Nombre des joueurs
-		if (isNaN(nombreJoueurs)){
-			alert("un chiffre svp")
-		}
-		else{
-			break
-		}
+	let nombreJoueurs = +prompt("combien de joueurs ?"); // Nombre des joueurs
+	if (isNaN(nombreJoueurs)){
+		alert("un chiffre svp")
 	}
+	else{
+		break
+	}
+    }
 
     for (let i = 0; i <= nombreJoueurs; i++) {
       joueurs.push(i);
