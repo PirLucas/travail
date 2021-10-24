@@ -74,16 +74,6 @@ let mot = motATrouver();
   }
 pendu(mot);
 
-  function verifie(lettreAVerifier) {
-    return true; //je pars du principe qu'on entre une lettre utilisable pour mes tests
-    //on appelera cette fonction apres le prompt d'entrée de lettre, elle devra renvoyer "true" si la lettre est bonne
-    //a verifier: que c'est 1 seule lettre, pas un chiffre, pas un charactere special, etc...
-    if (lettreAVerifier.length == 1) {
-      //si il y a qu'1 seul caractere
-    } else {
-      alert("n'écrit qu'une seule lettre stp");
-    }
-  }
 }
 
 function modeMulti() {
