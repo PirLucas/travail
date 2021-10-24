@@ -86,8 +86,9 @@ function modeMulti() {
     let nombreVies = 6;
     let joueurs = [];
     let joueurActuel;
+    let nombreJoueurs;
     while (true){
-		let nombreJoueurs = +prompt("combien de joueurs ?"); // Nombre des joueurs
+		nombreJoueurs = +prompt("combien de joueurs ?"); // Nombre des joueurs
 		if (isNaN(nombreJoueurs)){
 			alert("un chiffre svp")
 		}
