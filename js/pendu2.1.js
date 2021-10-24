@@ -50,6 +50,7 @@ let mot = motATrouver();
       );
       let trouve = false;
       if (verifie(lettre)) {
+	lettre = lettre.toLowerCase();
         lettresTentees.push(lettre);
         for (let i = 0; i < motPendu.length; i++) {
           if (lettre == motPendu[i]) {
@@ -114,6 +115,7 @@ function modeMulti() {
       let trouve = false;
 
       if (verifie(lettre)) {
+	lettre = lettre.toLowerCase();
         lettresTentees.push(lettre);
         for (let i = 0; i < motPendu.length; i++) {
           if (lettre == motPendu[i]) {
