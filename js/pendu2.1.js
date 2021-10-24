@@ -159,7 +159,7 @@ function modeMulti() {
 pendu(mot);
 
   function verifie(lettreAVerifier) {
-	if (lettreAVerifier == undefined){
+	if (lettreAVerifier == ""){
 		alert("veuillez entrer quelque chose");
 	}
 	else{
