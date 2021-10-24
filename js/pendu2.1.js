@@ -47,7 +47,7 @@ let mot = motATrouver();
       //a défaut d'avoir un autre moyen de comparer les listes
       let lettre = prompt(
         `le mot a trouver est: ${vide} \n entrez, vous avez déja essayé: ${lettresTentees}   \n nombre de vies : ${nombreVies}`
-      ).toLowerCase();
+      );
       let trouve = false;
       if (verifie(lettre)) {
         lettresTentees.push(lettre);
@@ -114,7 +114,7 @@ function modeMulti() {
 
       let lettre = prompt(
         `le mot a trouver est: ${vide} \n entrez, vous avez déja essayé: ${lettresTentees}   \n nombre de vies : ${nombreVies}`
-      ).toLowerCase();
+      );
 
       if (lettre == null) {
         confirm("Vous avez arrêter la partie");
