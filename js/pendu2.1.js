@@ -157,6 +157,7 @@ function modeMulti() {
     }
   }
 pendu(mot);
+}
 
 function verifie(lettreAVerifier) {
 	if (lettreAVerifier == ""){
@@ -180,4 +181,4 @@ function verifie(lettreAVerifier) {
 		}
 	}
   }
-}
+
