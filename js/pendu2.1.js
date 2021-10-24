@@ -32,8 +32,8 @@ function motATrouver() {
     let nbrAuHazard = Math.floor(Math.random() * listeMots1.length);
     return listeMots1[nbrAuHazard];
 }
-const mot = motATrouver();
 function modeUnJoueur() {
+let mot = motATrouver();
   function pendu(mot) {
     let motPendu = [];
     let vide = [];
@@ -87,7 +87,7 @@ pendu(mot);
 }
 
 function modeMulti() {
-  
+  let mot = motATrouver();
   function pendu(mot) {
     let motPendu = [];
     let vide = [];
