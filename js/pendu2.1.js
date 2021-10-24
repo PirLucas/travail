@@ -72,6 +72,7 @@ function modeUnJoueur() {
       }
     }
   }
+pendu(mot);
 
   function verifie(lettreAVerifier) {
     return true; //je pars du principe qu'on entre une lettre utilisable pour mes tests
@@ -155,6 +156,7 @@ function modeMulti() {
       }
     }
   }
+pendu(mot);
 
   function verifie(lettreAVerifier) {
     return true; //je pars du principe qu'on entre une lettre utilisable pour mes tests
