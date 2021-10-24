@@ -159,13 +159,25 @@ function modeMulti() {
 pendu(mot);
 
   function verifie(lettreAVerifier) {
-    return true; //je pars du principe qu'on entre une lettre utilisable pour mes tests
-    //on appelera cette fonction apres le prompt d'entrée de lettre, elle devra renvoyer "true" si la lettre est bonne
-    //a verifier: que c'est 1 seule lettre, pas un chiffre, pas un charactere special, etc...
-    if (lettreAVerifier.length == 1) {
-      //si il y a qu'1 seul caractere
-    } else {
-      alert("n'écrit qu'une seule lettre stp");
-    }
+	if (lettreAVerifier == undefined){
+		alert("veuillez entrer quelque chose");
+	}
+	else{
+		if (lettreAVerifier.length == 1) {
+			if (!isNaN(lettreAVerifier)){
+				alert("veuillez ne pas entrer un chiffre");
+			}
+			else{
+				if ((lettreAVerifier.toLowerCase().charCodeAt(0) >= 97) && (lettreAVerifier.toLowerCase().charCodeAt(0) <= 122)){
+					return true
+				}
+				else{
+					alert("veuillez entre une lettre");
+				}
+			}
+		} else {
+		  alert("n'écrit qu'une seule lettre stp");
+		}
+	}
   }
 }
