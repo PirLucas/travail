@@ -1,5 +1,5 @@
 "use strict";
-function mot() {
+function motATrouver() {
     let listeMots = `crayon, stylo, feutre, pointe, mine, gomme, dessin, coloriage, rayure, peinture, pinceau, couleu, craie, papier, feuille, cahier, carnet, carton, ciseaux,
         découpage, pliage, pli, colle, affaire, boîte, casier, caisse, trousse, cartable, jouet, jeu, pion, dé, domino, puzzle, cube, perle, chose, carré, rond, tampon,livre, histoire, bibliothèque, image, album, titre, conte, dictionnaire, magazine, catalogue, page, ligne, mot, enveloppe, étiquette,affiche, alphabet,
         appareil, caméscope, cassette, cédé, cédérom, chaîne, chanson, chiffre, contraire, différence, doigt, écran, écriture, film, fois, idée, instrument, intrus, lettre, liste, magnétoscope,
@@ -32,7 +32,7 @@ function mot() {
     let nbrAuHazard = Math.floor(Math.random() * listeMots1.length);
     return listeMots1[nbrAuHazard];
 }
-const mot = mot();
+const mot = motATrouver();
 function modeUnJoueur() {
   function pendu(mot) {
     let motPendu = [];
