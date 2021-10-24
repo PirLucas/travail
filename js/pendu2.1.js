@@ -85,8 +85,16 @@ function modeMulti() {
     let lettresTentees = [];
     let nombreVies = 6;
     let joueurs = [];
-    let nombreJoueurs = +prompt("combien de joueurs ?"); // Nombre des joueurs
     let joueurActuel;
+    while true{
+		let nombreJoueurs = +prompt("combien de joueurs ?"); // Nombre des joueurs
+		if (isNaN(nombreJoueurs)){
+			alert("un chiffre svp")
+		}
+		else{
+			break
+		}
+	}
 
     for (let i = 0; i <= nombreJoueurs; i++) {
       joueurs.push(i);
